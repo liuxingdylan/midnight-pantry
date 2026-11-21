@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Pantry — a tiny stealth game</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M3 24 L29 10 L29 24 Z' fill='%23ffd94d'/%3E%3Ccircle cx='20' cy='19' r='2.6' fill='%23e8a91c'/%3E%3Ccircle cx='12' cy='21' r='1.8' fill='%23e8a91c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="stage">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="hud">
+    <span id="hud-level">Level 1</span>
+    <span id="hud-cheese">🧀 0/3</span>
+    <span id="hud-crumbs">🍪 crumbs 3</span>
+    <span id="hud-eye"><span id="hud-eye-fill"></span></span>
+    <span id="hud-time">0:00</span>
+    <span id="hud-score">0</span>
+  </div>
+  <div id="hint">WASD / arrows move · Shift sneak · hold Space to run · click: toss a crumb · R restart · M mute</div>
+</main>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0b0e1a;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  color: #e8ddc8;
+}
+
+#stage {
+  position: relative;
+  width: min(1280px, 100vw);
+}
+
+canvas#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.65), 0 0 0 1px #2a2118;
+  background: #141021;
+}
+
+#hud {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+}
+
+#hud-level { color: #ffd98a; }
+#hud-score { margin-left: auto; color: #ffe9b0; }
+
+#hud-eye {
+  width: 110px;
+  height: 10px;
+  border: 1px solid rgba(255, 220, 150, 0.55);
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+#hud-eye-fill {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ffc44d, #ff7847, #ff3b30);
+  transition: width 90ms linear;
+}
+
+#hint {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #9d92a8;
+  letter-spacing: 0.03em;
+}
